@@ -1,0 +1,25 @@
+.different {
+  border: none;
+  position: relative;
+}
+.different:hover {
+  border: none;
+}
+.different:hover {
+  border-bottom: 3px solid #ffffff;
+}
+.different::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  left: 50%;
+  bottom: -1px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+  border-radius: 20px;
+}
+.different:hover::after {
+  width: 100%;
+  left: 0;
+}

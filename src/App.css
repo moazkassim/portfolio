@@ -1,0 +1,17 @@
+body {
+  background: radial-gradient(at bottom, #1b2735 0%, #090a0f 100%);
+  color: #c770f0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  font-family: Sans-serif;
+}
+body::-webkit-scrollbar {
+  background-color: #1b2735;
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c770f0;
+  border-radius: 20px;
+}
