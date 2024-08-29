@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "../Item";
+import imgTest from "../../../data/projects/floorPlan.jpg";
 
 export default function Projects() {
   const projectsArray = [
@@ -62,7 +63,7 @@ export default function Projects() {
               key={index}
               title={project.title}
               description={project.description}
-              src={project.src}
+              src={imgTest}
             />
           );
         })}
