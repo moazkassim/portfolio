@@ -44,9 +44,10 @@ export default function About() {
     three,
   ];
   const toolsArr = [
+    insomnia,
     anaconda,
     arduino,
-    insomnia,
+
     atom,
     jupyter,
     postman,
