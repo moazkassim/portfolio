@@ -20,7 +20,7 @@ import three from "../../../public/technicalTools/three.png";
 import anaconda from "../../../public/tools/anaconda.png";
 import arduino from "../../../public/tools/arduino.png";
 import atom from "../../../public/tools/atom.png";
-import insomia from "../../../public/tools/insomnia.png";
+// import insomia from "../../../public/tools/insomnia.png";
 import jupyter from "../../../public/tools/jupyter.png";
 import postman from "../../../public/tools/postman.png";
 import visualStudioCode from "../../../public/tools/visual-studio-code.png";
@@ -47,7 +47,7 @@ export default function About() {
     anaconda,
     arduino,
     atom,
-    insomia,
+    // insomia,
     jupyter,
     postman,
     visualStudio,
