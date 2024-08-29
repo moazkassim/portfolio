@@ -6,55 +6,55 @@ import Skill from "../Skill";
 
 export default function About() {
   const imagesArr = [
-    "../../../data/c.png",
-    "../../../data/c++.png",
-    "../../../data/css.png",
-    "../../../data/dog.png",
-    "../../../data/html.png",
-    "../../../data/java.png",
-    "../../../data/js.png",
-    "../../../data/office.png",
-    "../../../data/pixi.png",
-    "../../../data/sql.png",
-    "../../../data/react.png",
-    "../../../data/sass.png",
-    "../../../data/tailwind.png",
-    "../../../data/three.png",
+    "public/technicalTools/c.png",
+    "public/technicalTools/c++.png",
+    "public/technicalTools/css.png",
+    "public/technicalTools/dog.png",
+    "public/technicalTools/html.png",
+    "public/technicalTools/java.png",
+    "public/technicalTools/js.png",
+    "public/technicalTools/office.png",
+    "public/technicalTools/pixi.png",
+    "public/technicalTools/sql.png",
+    "public/technicalTools/react.png",
+    "public/technicalTools/sass.png",
+    "public/technicalTools/tailwind.png",
+    "public/technicalTools/three.png",
   ];
   const toolsArr = [
-    "../../../data/tools/anaconda.png",
-    "../../../data/tools/arduino.png",
-    "../../../data/tools/atom.png",
-    "../../../data/tools/insomnia.png",
-    "../../../data/tools/jupyter.png",
-    "../../../data/tools/postman.png",
-    "../../../data/tools/visual-studio.png",
-    "../../../data/tools/visual-studio-code.png",
+    "public/tools/anaconda.png",
+    "public/tools/arduino.png",
+    "public/tools/atom.png",
+    "public/tools/insomnia.png",
+    "public/tools/jupyter.png",
+    "public/tools/postman.png",
+    "public/tools/visual-studio.png",
+    "public/tools/visual-studio-code.png",
   ];
 
   return (
-    <section className="flex justify-center flex-col items-center">
-      <div className="about flex flex-row justify-between items-center w-4/5 max-md:m-10 max-md:p-5    my-28 max-xl:flex-col ">
-        <div className="about-data  flex flex-col p-0 m-0 max-sm:w-[400px] ">
-          <h1 className=" text-center text-4xl text-white mb-11">
-            Know Who <span className="text-[#c770f0] font-semibold">I'M</span>
+    <section className="flex flex-col items-center justify-center">
+      <div className="about my-28 flex w-4/5 flex-row items-center justify-between max-xl:flex-col max-md:m-10 max-md:p-5">
+        <div className="about-data m-0 flex flex-col p-0 max-sm:w-[400px]">
+          <h1 className="mb-11 text-center text-4xl text-white">
+            Know Who <span className="font-semibold text-[#c770f0]">I'M</span>
           </h1>
-          <div className=" flex flex-col gap-5">
-            <p className="text-white text-xl leading-8">
+          <div className="flex flex-col gap-5">
+            <p className="text-xl leading-8 text-white">
               Hi Everyone, I am{" "}
-              <span className="text-[#c770f0] font-semibold">Moaz Kassim</span>{" "}
+              <span className="font-semibold text-[#c770f0]">Moaz Kassim</span>{" "}
               from{" "}
-              <span className="text-[#c770f0] font-semibold">
+              <span className="font-semibold text-[#c770f0]">
                 {" "}
                 Tanta, Egypt.
               </span>
               I am currently a fresh graduate Computer Engineering and Automatic
               Control ( HIET-KFS ), and a software developer
             </p>
-            <p className="text-white text-xl mt-7">
+            <p className="mt-7 text-xl text-white">
               Apart from coding, some other activities that I love to do!
             </p>
-            <ul className=" ml-10">
+            <ul className="ml-10">
               <li className="flex flex-row items-center gap-1 text-lg text-white">
                 {" "}
                 <Pointer size={20} />
@@ -73,31 +73,31 @@ export default function About() {
             </ul>
           </div>
           <div className="about-quote">
-            <p className="text-[#9B7EAC] text-xl text-center mt-5">
+            <p className="mt-5 text-center text-xl text-[#9B7EAC]">
               &quot;Strive to build things that make a difference!&quot; Moaz
             </p>
           </div>
         </div>
-        <div className="about-img w-full max-xl:w-[500px] max-xl:mt-24 flex items-center ">
+        <div className="about-img flex w-full items-center max-xl:mt-24 max-xl:w-[500px]">
           <img src={aboutImage} />
         </div>
       </div>
-      <div className=" flex flex-col gap-5 items-center my-24  ">
-        <h1 className="text-4xl mb-10">
-          <span className="text-white ">Professional</span> Skillset
+      <div className="my-24 flex flex-col items-center gap-5">
+        <h1 className="mb-10 text-4xl">
+          <span className="text-white">Professional</span> Skillset
         </h1>
-        <div className="grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-xl:grid-cols-3 gap-8 justify-center ">
+        <div className="grid grid-cols-4 justify-center gap-8 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
           {imagesArr.map((img, index) => {
             return <Skill key={index} src={img} />;
           })}
         </div>
       </div>
-      <div className=" flex flex-col flex-wrap gap-1 items-center my-24  w-4/5">
-        <h1 className="text-4xl mb-10 font-semibold">
+      <div className="my-24 flex w-4/5 flex-col flex-wrap items-center gap-1">
+        <h1 className="mb-10 text-4xl font-semibold">
           Tools
-          <span className="text-white "> I use</span>
+          <span className="text-white"> I use</span>
         </h1>
-        <div className="grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-xl:grid-cols-3 gap-8 justify-center">
+        <div className="grid grid-cols-4 justify-center gap-8 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
           {toolsArr.map((img, index) => {
             return <Skill key={index} src={img} />;
           })}
