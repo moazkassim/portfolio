@@ -1,6 +1,12 @@
 import React from "react";
 import Item from "../Item";
 import alu from "../../../public/projects/alu.jpg";
+import atm from "../../../public/projects/atm.jpg";
+import ecomerce from "../../../public/projects/ecomerce.jpg";
+import floorPlan from "../../../public/projects/floorPlan.jpg";
+import note from "../../../public/projects/note.jpg";
+import toDoList from "../../../public/projects/toDoList.jpg";
+
 export default function Projects() {
   const projectsArray = [
     {
@@ -14,35 +20,35 @@ export default function Projects() {
       description:
         "An Automated Teller Machine (ATM) system that provides banking services to customers through a machine, allowing them to withdraw cash, check account balances, transfer funds, and more. Below are some core components and processes typically involved in an ATM system",
 
-      src: alu,
+      src: atm,
     },
     {
       title: "C Mosfet ALU",
       description:
         " Design and implement a basic ALU using CMOS transistors to perform arithmetic and logical operations. Interface the ALU with an ESP32 for control, and use a webcam to stream a live demo of the circuit operation.",
 
-      src: alu,
+      src: ecomerce,
     },
     {
       title: "To-Do List",
       description:
         "A To-Do List project using HTML, CSS, and JavaScript is a simple web application that allows users to add, manage, and delete tasks. It can include basic functionality",
 
-      src: alu,
+      src: floorPlan,
     },
     {
       title: "E-Commerce",
       description:
         "An e-commerce website project involves creating an online platform where products or services are bought and sold over the internet. providing a user-friendly interface for browsing products, adding them to a shopping cart .",
 
-      src: alu,
+      src: note,
     },
     {
       title: "React Note",
       description:
         "A React project for online notes using React Markdown (react-markdown) is a web application that allows users to create, edit, and manage their notes online, with the capability to format these notes using Markdown syntax.",
 
-      src: alu,
+      src: toDoList,
     },
   ];
   return (
