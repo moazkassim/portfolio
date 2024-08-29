@@ -10,84 +10,81 @@ import { Send } from "lucide-react";
 import Moaz from "../../assets/moaz.png";
 
 export default function Navbar() {
-  const screenWidth = window.innerWidth;
-  const handleWidth = (screenWidth) => {
-    if (screenWidth > 1000) {
-      // toggle the className
-    }
-  };
-
-  useEffect(() => {
-    handleWidth();
-  }, [screenWidth]);
-
-  const [scrolling, setScrolling] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      // Change 50 to the scroll position you prefer
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <nav
-      className={`bg-semi-transparent background-blur sticky left-0 top-0 z-10 flex w-full justify-center overflow-hidden bg-opacity-70 p-0 text-white shadow-lg backdrop-blur-md ${
-        scrolling ? " " : ""
-      }`}
-    >
-      <div className="container flex w-4/5 flex-row items-center justify-between py-2">
-        <h1 className="z-10 cursor-pointer text-2xl text-gray-50">
-          <Link to={"/"}>
-            {" "}
-            <img src={Moaz} className="z-100 h-11 w-12" />
-          </Link>
-        </h1>
-        <ul className="relative flex flex-row gap-12">
-          <li className="different cursor-pointer text-xl">
-            <Link to={"/"} className="flex flex-row items-center gap-1">
-              <House size={19} />
-              Home
-            </Link>
-          </li>
-          <li className="different cursor-pointer text-xl">
-            <Link to={"/about"} className="flex flex-row items-center gap-1">
-              <User size={19} /> About
-            </Link>
-          </li>
-          <li className="different cursor-pointer text-xl">
-            <Link to={"/projects"} className="flex flex-row items-center gap-1">
-              <FolderKanban size={19} /> Projects
-            </Link>
-          </li>
-          <li className="different cursor-pointer text-xl">
-            <Link to={"/resume"} className="flex flex-row items-center gap-1">
-              <FileText size={19} /> Resume
-            </Link>
-          </li>
-          <li className="different cursor-pointer text-xl">
-            <Link
-              to={"/contactUs"}
-              className="flex flex-row items-center gap-1"
-            >
-              <Send size={19} /> Contact Us
-            </Link>
-          </li>
-        </ul>
+    <nav className="bg-semi-transparent background-blur sticky left-0 top-0 z-10 w-full bg-opacity-70 text-white shadow-md backdrop-blur-md">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+        <Link
+          to={"/"}
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src={Moaz} className="h-8" alt="moaz Logo" />
+          <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+            Moaz Kassim
+          </span>
+        </Link>
+
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="flex flex-col rounded-lg font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse">
+            <li className="different text-md cursor-pointer">
+              <Link to={"/"} className="flex flex-row items-center gap-1">
+                <House size={18} />
+                Home
+              </Link>
+            </li>
+            <li className="different text-md cursor-pointer">
+              <Link to={"/about"} className="flex flex-row items-center gap-1">
+                <User size={18} /> About
+              </Link>
+            </li>
+            <li className="different text-md cursor-pointer">
+              <Link
+                to={"/projects"}
+                className="flex flex-row items-center gap-1"
+              >
+                <FolderKanban size={18} /> Projects
+              </Link>
+            </li>
+            <li className="different text-md cursor-pointer">
+              <Link to={"/resume"} className="flex flex-row items-center gap-1">
+                <FileText size={18} /> Resume
+              </Link>
+            </li>
+            <li className="different text-md cursor-pointer">
+              <Link
+                to={"/contactUs"}
+                className="flex flex-row items-center gap-1"
+              >
+                <Send size={18} /> Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button onClick={() => console.log("yes")} className="">
-        <Menu color="#623686" size={30} className="" />
-      </button>
     </nav>
   );
 }
-// className={` ${screenWidth > 1500 ? "hidden" : " "}`}
+// classNameName={` ${screenWidth > 1500 ? "hidden" : " "}`}
