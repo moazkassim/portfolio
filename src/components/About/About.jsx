@@ -3,33 +3,55 @@ import "./about.css";
 import { Pointer } from "lucide-react";
 import aboutImage from "../../assets/about.png";
 import Skill from "../Skill";
+import cImg from "../../../public/technicalTools/c.png";
+import cPlus from "../../../public/technicalTools/c++.png";
+import dog from "../../../public/technicalTools/dog.png";
+import html from "../../../public/technicalTools/html.png";
+import react from "../../../public/technicalTools/react.png";
+import sql from "../../../public/technicalTools/sql.png";
+import pixi from "../../../public/technicalTools/pixi.png";
+import office from "../../../public/technicalTools/office.png";
+import js from "../../../public/technicalTools/js.png";
+import java from "../../../public/technicalTools/java.png";
+import css from "../../../public/technicalTools/css.png";
+import tailwind from "../../../public/technicalTools/tailwind.png";
+import sass from "../../../public/technicalTools/sass.png";
+import three from "../../../public/technicalTools/three.png";
+import anaconda from "../../../public/tools/anaconda.png";
+import arduino from "../../../public/tools/arduino.png";
+import atom from "../../../public/tools/atom.png";
+import insomnia from "../../../public/tools/insomnia.png";
+import jupyter from "../../../public/tools/jupyter.png";
+import postman from "../../../public/tools/postman.png";
+import visualStudioCode from "../../../public/tools/visual-studio-code.png";
+import visualStudio from "../../../public/tools/visual-studio.png";
 
 export default function About() {
   const imagesArr = [
-    "public/technicalTools/c.png",
-    "public/technicalTools/c++.png",
-    "public/technicalTools/css.png",
-    "public/technicalTools/dog.png",
-    "public/technicalTools/html.png",
-    "public/technicalTools/java.png",
-    "public/technicalTools/js.png",
-    "public/technicalTools/office.png",
-    "public/technicalTools/pixi.png",
-    "public/technicalTools/sql.png",
-    "public/technicalTools/react.png",
-    "public/technicalTools/sass.png",
-    "public/technicalTools/tailwind.png",
-    "public/technicalTools/three.png",
+    cImg,
+    cPlus,
+    css,
+    dog,
+    html,
+    java,
+    js,
+    office,
+    pixi,
+    sql,
+    react,
+    sass,
+    tailwind,
+    three,
   ];
   const toolsArr = [
-    "public/tools/anaconda.png",
-    "public/tools/arduino.png",
-    "public/tools/atom.png",
-    "public/tools/insomnia.png",
-    "public/tools/jupyter.png",
-    "public/tools/postman.png",
-    "public/tools/visual-studio.png",
-    "public/tools/visual-studio-code.png",
+    anaconda,
+    arduino,
+    atom,
+    insomnia,
+    jupyter,
+    postman,
+    visualStudio,
+    visualStudioCode,
   ];
 
   return (
