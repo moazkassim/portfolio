@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdf from "/public/resume/moazahmedkassim.pdf";
+import pdf from "/public/resume/resume.pdf";
 
 export default function Resume() {
   return (
