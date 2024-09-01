@@ -5,9 +5,7 @@
 .different:hover {
   border: none;
 }
-.different:hover {
-  border-bottom: 3px solid #ffffff;
-}
+
 .different::after {
   content: "";
   position: absolute;

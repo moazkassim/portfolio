@@ -48,7 +48,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col rounded-lg font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse">
+          <ul className="flex flex-col gap-8 rounded-lg font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse">
             <li className="different text-md cursor-pointer">
               <Link to={"/"} className="flex flex-row items-center gap-1">
                 <House size={18} />
