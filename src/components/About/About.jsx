@@ -83,18 +83,18 @@ export default function About() {
               <li className="flex flex-row items-center gap-1 text-lg text-white">
                 {" "}
                 <Pointer size={20} />
-                Writing Tech Blogs
+                Writing and Reading
               </li>
               <li className="flex flex-row items-center gap-1 text-lg text-white">
                 {" "}
                 <Pointer size={20} />
-                Travelling
+                Traveling
               </li>
             </ul>
           </div>
           <div className="about-quote">
             <p className="mt-5 text-center text-xl text-[#9B7EAC]">
-              &quot;Strive to build things that make a difference!&quot; Moaz
+              &quot;Strive to build things that make a difference!&quot;
             </p>
           </div>
         </div>

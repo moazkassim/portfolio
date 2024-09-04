@@ -21,7 +21,7 @@ export default function Myself() {
           <p className="text-xl text-white">
             I am fluent in classics like
             <span className="mx-1 font-bold italic text-[#c770f0;]">
-              C++, Javascript and Go.
+              C++, Javascript and c#.
             </span>
           </p>
           <p className="text-xl text-white">
@@ -32,18 +32,16 @@ export default function Myself() {
             and also in areas
             <br /> related to{" "}
             <span className="mx-1 font-bold italic text-[#c770f0;]">
-              Blockchain.
+              Artificial Intelligence.
             </span>
           </p>
           <p className="text-xl text-white">
             Whenever possible, I also apply my passion for developing products
             with{" "}
-            <span className="mx-1 font-bold text-[#c770f0;]"> Node.js</span> and{" "}
             <span className="mx-1 font-bold italic text-[#c770f0;]">
               {" "}
               Modern <br /> Javascript Library and Frameworks{" "}
-              <span className="font-normal text-white">like</span> React.js and
-              Next.js
+              <span className="font-normal text-white">like</span> React.js
             </span>
           </p>
         </div>
