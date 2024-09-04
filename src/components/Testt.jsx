@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Moaz from "../../assets/moaz.png";
-import moazPhoto from "../../assets/photo_2024-09-03_12-07-39.jpg";
-import { Plus } from "lucide-react";
+import { House } from "lucide-react";
+import { User } from "lucide-react";
+import { FolderKanban } from "lucide-react";
+
+import { FileText } from "lucide-react";
+import { Send } from "lucide-react";
+import Moaz from "../assets/moaz.png";
 import {
   Disclosure,
   DisclosureButton,
@@ -27,13 +31,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export function Testt() {
   return (
     <Disclosure
       as="nav"
-      className="bg-semi-transparent background-blur w sticky left-0 top-0 z-10 w-full bg-opacity-70 text-white shadow-md backdrop-blur-md"
+      className="bg-semi-transparent background-blur sticky left-0 top-0 z-10 w-full bg-opacity-70 text-white shadow-md backdrop-blur-md"
     >
-      <div className="mx-auto max-w-[1350px] px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -51,9 +55,6 @@ export default function Example() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              <img alt="Your Company" src={Moaz} className="h-8 w-auto" />
-            </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
@@ -75,25 +76,12 @@ export default function Example() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative flex items-center justify-center gap-2 rounded-lg bg-[#9123c5] p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              Job <Plus size={20} />
-            </button>
-
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
-                <MenuButton className="relative flex rounded-full border-2 border-white">
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">Open user menu</span>
-                  <img
-                    alt=""
-                    src={moazPhoto}
-                    className="h-8 w-8 rounded-full"
-                  />
-                </MenuButton>
+                <div className="flex flex-shrink-0 items-center">
+                  <img alt="Your Company" src={Moaz} className="h-8 w-auto" />
+                </div>
               </div>
             </Menu>
           </div>

@@ -2,9 +2,6 @@
   border: none;
   position: relative;
 }
-.different:hover {
-  border: none;
-}
 
 .different::after {
   content: "";
