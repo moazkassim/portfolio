@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import Moaz from "../../assets/moaz.png";
 import moazPhoto from "../../assets/photo_2024-09-03_12-07-39.jpg";
 import { Plus } from "lucide-react";
@@ -28,6 +28,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const navigate = useNavigate();
   return (
     <Disclosure
       as="nav"
@@ -80,6 +81,9 @@ export default function Example() {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               type="button"
+              onClick={() => {
+                navigate("/contactUs");
+              }}
               className="relative flex items-center justify-center gap-2 rounded-lg bg-[#9123c5] p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               Job <Plus size={20} />
