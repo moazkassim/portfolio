@@ -5,12 +5,7 @@ export default function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: ["Software Developer", "Freelancer", "Front-End Developer"],
         autoStart: true,
         loop: true,
         deleteSpeed: 55,
