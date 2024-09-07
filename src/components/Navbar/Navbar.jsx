@@ -16,7 +16,7 @@ import {
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
+  { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Projects", href: "/projects", current: false },
   { name: "Resume", href: "/resume", current: false },
@@ -60,6 +60,9 @@ export default function Example() {
                   <Link
                     key={item.name}
                     to={item.href}
+                    onClick={(e) => {
+                      e.target.current === true;
+                    }}
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
