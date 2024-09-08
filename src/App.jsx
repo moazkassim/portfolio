@@ -9,6 +9,7 @@ import Resume from "./components/Resume/Resume";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import NoMatch from "./components/NoMatch";
 
 function App() {
   return (
@@ -20,18 +21,16 @@ function App() {
       <div className="container">
         <Routes>
           <Route exact path="/" element={<Home />} />
-        </Routes>
-        <Routes>
+
           <Route exact path="/about" element={<About />} />
-        </Routes>
-        <Routes>
+
           <Route exact path="/projects" element={<Projects />} />
-        </Routes>
-        <Routes>
+
           <Route exact path="/resume" element={<Resume />} />
-        </Routes>
-        <Routes>
+
           <Route exact path="/contactUs" element={<Contact />} />
+
+          <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>
       <Footer />
