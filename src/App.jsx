@@ -1,6 +1,6 @@
 import "./App.css";
 // import "/stars.css";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -28,7 +28,7 @@ function App() {
 
           <Route exact path="/resume" element={<Resume />} />
 
-          <Route exact path="/contactUs" element={<Contact />} />
+          <Route exact path="/contactUs/:i  d" element={<Contact />} />
 
           <Route path="*" element={<NoMatch />} />
         </Routes>

@@ -1,9 +1,9 @@
-import React from "react";
 import Email from "../../../public/email.png";
 import Phone from "../../../public/phone.png";
 import Location from "../../../public/location.png";
-
-export default function Contact() {
+import * as React from "react";
+export default function Contact(props) {
+  console.log("props ", props);
   return (
     <div className="my-20 flex justify-center">
       <div className="flex w-4/5 flex-col items-center justify-center">

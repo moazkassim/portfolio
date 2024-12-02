@@ -41,7 +41,8 @@ export default function Myself() {
             <span className="mx-1 font-bold italic text-[#c770f0;]">
               {" "}
               Modern <br /> Javascript Library and Frameworks{" "}
-              <span className="font-normal text-white">like</span> React.js
+              <span className="font-normal text-white">like</span> React.js and
+              Angular
             </span>
           </p>
         </div>
