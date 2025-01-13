@@ -47,7 +47,7 @@ export default function Projects() {
 
       src: ecomerce,
       githubLink: "https://github.com/moazkassim/hayaTraining",
-      demoLink: "",
+      demoLink: "https://e-comerceapp.netlify.app/",
     },
     {
       title: "bit of me",

@@ -57,7 +57,7 @@ export default function About() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center overflow-hidden">
       <div className="about my-28 flex w-4/5 flex-row items-center justify-between max-xl:flex-col max-md:m-10 max-md:p-5">
         <div className="about-data m-0 flex flex-col p-0 max-sm:w-[400px]">
           <h1 className="mb-11 text-center text-4xl text-white">

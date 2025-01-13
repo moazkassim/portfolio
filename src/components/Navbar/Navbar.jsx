@@ -104,23 +104,19 @@ export default function Example() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
+      <DisclosurePanel className="bg-semi-transparent background-blur sticky w-full bg-opacity-75 backdrop-blur-md sm:hidden">
+        <div className="z-30 flex flex-col items-start space-y-1 px-2 pb-3 pt-2 shadow-md">
           {navigation.map((item) => (
-            <DisclosureButton
+            <Link
               key={item.name}
-              as="a"
-              href={item.href}
+              to={item.href}
+              onClick={(e) => {
+                e.target.current === true;
+              }}
               aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium",
-              )}
             >
               {item.name}
-            </DisclosureButton>
+            </Link>
           ))}
         </div>
       </DisclosurePanel>
