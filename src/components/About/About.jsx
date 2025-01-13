@@ -57,7 +57,7 @@ export default function About() {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-center overflow-hidden">
+    <section className="flex flex-col items-center justify-center">
       <div className="about my-28 flex w-4/5 flex-row items-center justify-between max-xl:flex-col max-md:m-10 max-md:p-5">
         <div className="about-data m-0 flex flex-col p-0 max-sm:w-[400px]">
           <h1 className="mb-11 text-center text-4xl text-white">
@@ -99,8 +99,8 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="about-img flex w-full items-center max-xl:mt-24 max-xl:w-[500px]">
-          <img src={aboutImage} />
+        <div className="about-img flex w-full min-w-[400px] items-center max-xl:mt-24 max-xl:w-[500px]">
+          <img src={aboutImage} className="" />
         </div>
       </div>
       <div className="my-24 flex flex-col items-center gap-5">

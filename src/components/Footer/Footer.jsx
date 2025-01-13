@@ -1,11 +1,9 @@
-import React from "react";
 import { Github } from "lucide-react";
 import { Twitter } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Instagram } from "lucide-react";
 
 export default function Footer() {
-  //
   return (
     <footer className="flex w-full justify-center bg-black">
       <div className="container flex w-4/5 flex-col items-center justify-between py-4 max-lg:h-[150px] lg:flex-row">
