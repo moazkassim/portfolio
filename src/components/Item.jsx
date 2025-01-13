@@ -3,7 +3,7 @@ import { Radio } from "lucide-react";
 
 export default function Item(props) {
   return (
-    <div className="relative flex h-[620px] w-[350px] flex-1 cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border-2 border-[#c770f0] p-5 duration-700 hover:scale-95">
+    <div className="relative flex h-[620px] w-full max-w-[370px] flex-1 cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border-2 border-[#c770f0] p-5 duration-700 hover:scale-95">
       <div className="absolute top-10">
         <img className="h-[240px] w-[270px] rounded" src={props.src} />
       </div>
