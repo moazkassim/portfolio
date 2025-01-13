@@ -1,4 +1,3 @@
-import React from "react";
 import Item from "../Item";
 import alu from "../../../public/projects/alu.jpg";
 import atm from "../../../public/projects/atm.jpg";
@@ -11,6 +10,7 @@ import fourth from "../../../public/projects/fourth.jpg";
 import third from "../../../public/projects/third.jpg";
 import myself from "../../../public/projects/myself.jpg";
 import game from "../../../public/projects/game.jpg";
+import vidly from "../../../public/projects/vidly.jpg";
 
 export default function Projects() {
   const projectsArray = [
@@ -21,6 +21,15 @@ export default function Projects() {
       src: floorPlan,
       githubLink: "https://github.com/moazkassim/floorPlanDesign",
       demoLink: "https://floorplandesign.netlify.app/",
+    },
+    {
+      title: "Vidly App",
+      description:
+        "Vidly system is a movie rental management system. It is implemented using Node.js and Express to create robust RESTful APIs, while MongoDB serves as the database for storing movies, genres and rental records. The app leverages (JWT) for authentication and data validation.",
+
+      src: vidly,
+      githubLink: "https://github.com/moazkassim/to-do-list",
+      demoLink: "",
     },
     {
       title: "To-Do List",
@@ -119,7 +128,7 @@ export default function Projects() {
           <span className="text-white">My Recent</span> Works
         </h1>
         <p className="mt-2 text-base text-white">
-          Here are a few projects i've worked on recently
+          Here are a few projects i&apos;ve worked on recently
         </p>
       </div>
       <div className="my-28 grid w-4/5 grid-cols-1 justify-items-center gap-10 lg:grid-cols-2 2xl:grid-cols-3">

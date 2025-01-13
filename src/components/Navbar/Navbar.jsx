@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Moaz from "../../assets/moaz.png";
@@ -10,10 +9,8 @@ import {
   DisclosurePanel,
   Menu,
   MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -84,7 +81,7 @@ export default function Example() {
               onClick={() => {
                 navigate("/contactUs");
               }}
-              className="relative flex items-center justify-center gap-2 rounded-lg bg-[#9123c5] p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="relative flex items-center justify-center gap-2 rounded-lg bg-[#9123c5] p-1 text-white duration-100 hover:bg-[#982ec9] focus:ring-offset-2"
             >
               Job <Plus size={20} />
             </button>

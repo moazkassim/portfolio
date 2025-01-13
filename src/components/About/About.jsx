@@ -1,5 +1,3 @@
-import React from "react";
-import "./about.css";
 import { Pointer } from "lucide-react";
 import aboutImage from "../../assets/about.png";
 import Skill from "../Skill";
@@ -24,9 +22,15 @@ import jupyter from "../../../public/tools/jupyter.png";
 import postman from "../../../public/tools/postman.png";
 import visualStudioCode from "../../../public/tools/visual-studio-code.png";
 import visualStudio from "../../../public/tools/visual-studio.png";
+import nodejs from "../../../public/tools/nodejs.png";
+import express from "../../../public/tools/express.png";
+import mongo from "../../../public/tools/mongo.svg";
 
 export default function About() {
   const imagesArr = [
+    nodejs,
+    express,
+    mongo,
     cImg,
     cPlus,
     css,
@@ -57,15 +61,15 @@ export default function About() {
       <div className="about my-28 flex w-4/5 flex-row items-center justify-between max-xl:flex-col max-md:m-10 max-md:p-5">
         <div className="about-data m-0 flex flex-col p-0 max-sm:w-[400px]">
           <h1 className="mb-11 text-center text-4xl text-white">
-            Know Who <span className="font-semibold text-[#c770f0]">I'M</span>
+            Know Who
+            <span className="font-semibold text-[#c770f0]"> I&apos;M</span>
           </h1>
           <div className="flex flex-col gap-5">
             <p className="text-xl leading-8 text-white">
-              Hi Everyone, I am{" "}
-              <span className="font-semibold text-[#c770f0]">Moaz Kassim</span>{" "}
-              from{" "}
+              Hi Everyone, I am
+              <span className="font-semibold text-[#c770f0]">Moaz Kassim</span>
+              from
               <span className="font-semibold text-[#c770f0]">
-                {" "}
                 Tanta, Egypt.
               </span>
               I am currently a fresh graduate Computer Engineering and Automatic
@@ -76,17 +80,14 @@ export default function About() {
             </p>
             <ul className="ml-10">
               <li className="flex flex-row items-center gap-1 text-lg text-white">
-                {" "}
                 <Pointer size={20} />
                 Playing Games
               </li>
               <li className="flex flex-row items-center gap-1 text-lg text-white">
-                {" "}
                 <Pointer size={20} />
                 Writing and Reading
               </li>
               <li className="flex flex-row items-center gap-1 text-lg text-white">
-                {" "}
                 <Pointer size={20} />
                 Traveling
               </li>

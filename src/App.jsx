@@ -1,6 +1,6 @@
 import "./App.css";
 // import "/stars.css";
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -14,9 +14,6 @@ import NoMatch from "./components/NoMatch";
 function App() {
   return (
     <main className="flex w-full flex-col items-center">
-      {/* <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div> */}
       <Navbar />
       <div className="container">
         <Routes>
@@ -28,7 +25,7 @@ function App() {
 
           <Route exact path="/resume" element={<Resume />} />
 
-          <Route exact path="/contactUs/:i  d" element={<Contact />} />
+          <Route exact path="/contactUs/" element={<Contact />} />
 
           <Route path="*" element={<NoMatch />} />
         </Routes>

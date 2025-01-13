@@ -1,7 +1,6 @@
 import Email from "../../../public/email.png";
 import Phone from "../../../public/phone.png";
 import Location from "../../../public/location.png";
-import * as React from "react";
 export default function Contact(props) {
   console.log("props ", props);
   return (
@@ -63,7 +62,7 @@ export default function Contact(props) {
                     target="_blank"
                     href="https://goo.gl/maps/QcWzYETAh4FS3KTD7"
                   >
-                    Tanta el-gharbia
+                    Cairo, Egypt
                   </a>
                 </div>
               </div>

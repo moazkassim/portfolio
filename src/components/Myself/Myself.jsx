@@ -1,4 +1,3 @@
-import React from "react";
 import avatar from "../../assets/avatar.svg";
 import { Github } from "lucide-react";
 import { Twitter } from "lucide-react";
@@ -25,7 +24,7 @@ export default function Myself() {
             </span>
           </p>
           <p className="text-xl text-white">
-            My field of Interest's are building new
+            My field of Interests are building new
             <span className="mx-1 font-bold italic text-[#c770f0;]">
               Web Technologies and Products
             </span>{" "}
@@ -43,6 +42,16 @@ export default function Myself() {
               Modern <br /> Javascript Library and Frameworks{" "}
               <span className="font-normal text-white">like</span> React.js and
               Angular
+            </span>
+          </p>
+          <p className="text-xl text-white">
+            Skilled backend developer with expertise in{" "}
+            <span className="mx-1 font-bold italic text-[#c770f0;]">
+              Node.js
+            </span>{" "}
+            and{" "}
+            <span className="mx-1 font-bold italic text-[#c770f0;]">
+              Express.
             </span>
           </p>
         </div>
