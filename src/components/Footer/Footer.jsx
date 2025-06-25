@@ -11,7 +11,7 @@ export default function Footer() {
           <p className="text-white">Designed & Developed by Moaz Kassim</p>
         </div>
         <div className="flex flex-1 justify-center">
-          <p className="text-white">Copyright © 2024 MK</p>
+          <p className="text-white">Copyright © 2025 MK</p>
         </div>
         <ul className="flex flex-1 flex-row justify-end gap-6">
           <li className="cursor-pointer">
